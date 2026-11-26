@@ -1,0 +1,30 @@
+{
+  "description": "Actual JSON-RPC tool invocation by the coding assistant during this build; no model API is called by the tool.",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "propose_experiment",
+      "arguments": {
+        "title": "A specific promise for a creator lesson",
+        "brief": "Test one headline on an owned content lesson preview. Keep layout, content, CTA and distribution fixed. Measure one Continue action per identity. This demonstration uses synthetic traffic.",
+        "hypothesis": "Visitors assigned an outcome-specific headline will click Continue more often than those assigned a generic headline. Synthetic traffic verifies the measurement flow; a real audience test would be needed to validate this preference.",
+        "control": "Make better content with AI",
+        "treatment": "Turn one idea into a video outline"
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"plan\": {\n    \"id\": \"exp_83ed391d8a024ee7\",\n    \"title\": \"A specific promise for a creator lesson\",\n    \"brief\": \"Test one headline on an owned content lesson preview. Keep layout, content, CTA and distribution fixed. Measure one Continue action per identity. This demonstration uses synthetic traffic.\",\n    \"hypothesis\": \"Visitors assigned an outcome-specific headline will click Continue more often than those assigned a generic headline. Synthetic traffic verifies the measurement flow; a real audience test would be needed to validate this preference.\",\n    \"flagName\": \"studio_hook_83ed391d\",\n    \"metric\": \"continue_clicked\",\n    \"control\": \"Make better content with AI\",\n    \"treatment\": \"Turn one idea into a video outline\",\n    \"split\": 50,\n    \"minPerVariant\": 50,\n    \"minConversions\": 5,\n    \"probabilityThreshold\": 0.95,\n    \"provenance\": \"agent\",\n    \"revision\": 1,\n    \"scope\": \"development\",\n    \"status\": \"draft\",\n    \"createdAt\": \"2026-11-26T07:41:20.693Z\",\n    \"hash\": \"be4508894e81db3a889e7fdef3ac5d97c0eca000eb1a651ce739709f31e0e9b3\"\n  },\n  \"next\": \"Open the local review interface and import data/agent-proposal.json. A reviewer must inspect and approve the exact proposal before Flagsmith changes.\",\n  \"mutatedFlagsmith\": false\n}"
+        }
+      ]
+    }
+  }
+}
