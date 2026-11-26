@@ -1,0 +1,7 @@
+{
+  "title": "A specific promise for a creator lesson",
+  "brief": "Test one headline on an owned content lesson preview. Keep layout, content, CTA and distribution fixed. Measure one Continue action per identity. This demonstration uses synthetic traffic.",
+  "hypothesis": "Visitors assigned an outcome-specific headline will click Continue more often than those assigned a generic headline. Synthetic traffic verifies the measurement flow; a real audience test would be needed to validate this preference.",
+  "control": "Make better content with AI",
+  "treatment": "Turn one idea into a video outline"
+}
