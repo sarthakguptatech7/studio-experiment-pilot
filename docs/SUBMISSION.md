@@ -1,6 +1,6 @@
 # Toggle Wars submission draft
 
-**Status: registration completed; demo published; source publication in progress; project submission pending.**
+**Status: registration completed; source and demo published; project submission blocked by the organizer's current form.**
 
 | Field | Draft value |
 | --- | --- |
@@ -8,7 +8,7 @@
 | Track | Track 02 — AI Agents and Feature Flags |
 | Author / team | Sarthak Gupta / ZwightX AI Labs |
 | WeMakeDevs registration | **Completed — registered state verified** |
-| Public GitHub repository | [studio-experiment-pilot](https://github.com/sarthakguptatech7/studio-experiment-pilot) — public repository created; source publication in progress and not yet verified |
+| Public GitHub repository | [studio-experiment-pilot](https://github.com/sarthakguptatech7/studio-experiment-pilot) — complete source published and verified |
 | Working demo video | [Published 2:42 walkthrough](../demo/README.md) · [direct video](https://github.com/user-attachments/assets/816d7d2c-d4f7-4e13-bd20-e16857656879) — rendered video verified |
 | Hosted preview | [Private rehearsal preview](https://studio-experiment-pilot.sarthakgupta496399.chatgpt.site/) — deployed; owner sign-in required; reviewer access not enabled |
 | Deadline | 29 November 2026, 8:00 PM IST |
@@ -157,17 +157,17 @@ WeMakeDevs registration is complete: the signed-in event page shows
 says **No submissions for this one** and presents registrations only. No
 project submission has been accepted.
 
-The dedicated public repository linked above has been created. Initial files
-are published; complete source publication remains in progress. The **2:42**
+The dedicated public repository linked above contains the complete source,
+tests, setup guide and sanitized evidence, verified against the prepared package.
+The **2:42**
 narrated walkthrough is published through the demo README and the direct video
 link above. Its rendered player loaded successfully. The walkthrough uses
 captured states from the real browser run, a synthetic voice and explicit
 synthetic-audience labels.
 
-1. Complete and verify publication of the source at the dedicated repository root.
-2. Obtain a working organizer submission route, then enter Track 02 and the final
+1. Obtain a working organizer submission route, then enter Track 02 and the final
    verified repository and video links.
-3. Confirm the form's accepted submission state or receipt. A filled draft,
+2. Confirm the form's accepted submission state or receipt. A filled draft,
    registration confirmation or local build is not submission confirmation.
 
 Use the official event page for the current form state and schedule:

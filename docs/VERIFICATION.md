@@ -1,9 +1,9 @@
 # Verification record — 26 November 2026
 
 This is a working entry prepared for Toggle Wars Track 02. WeMakeDevs registration
-is complete and a dedicated public GitHub repository has been created. The 2:42
-demo is published and its rendered video verified. Complete source publication
-remains in progress; accepted project submission has not been verified.
+is complete. The complete source and the 2:42 demo are published in a dedicated
+public GitHub repository and verified. The organizer's current submission route
+provides no project form; accepted project submission has not been verified.
 
 ## Automated checks
 
@@ -86,14 +86,18 @@ participant, not an accepted project submission.
 
 The dedicated public repository was created at
 [studio-experiment-pilot](https://github.com/sarthakguptatech7/studio-experiment-pilot).
-Initial repository files and the [demo README](../demo/README.md) are published.
-Complete source publication remains in progress. The
+All 39 expected files, including the [demo README](../demo/README.md), are published.
+At commit `617c5b55447ff769022356beed54afe4d7c63d1d`, the complete recursive tree
+contained no missing or unexpected files. Git blob hashes confirmed that all
+application code, tests, setup documentation and evidence matched the prepared
+package byte-for-byte. The root README was the only expected difference while
+its final publication links and these status notes were being updated.
+The
 [direct video attachment](https://github.com/user-attachments/assets/816d7d2c-d4f7-4e13-bd20-e16857656879)
 loaded in the rendered player, reporting **162.09 seconds** (2:42). The demo
 README was committed as `80fdac9e61683cf1a0f64b70cac571c5855c2d68`; the video is
 hosted as a GitHub attachment rather than a binary source file.
 
-- Complete publication and verify the repository source.
 - Obtain a working organizer project-submission route.
 - Submit Track 02 with verified repository/video links, then confirm the accepted
   state or receipt. Registration alone does not complete the project entry.
