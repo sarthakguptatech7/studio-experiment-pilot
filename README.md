@@ -13,11 +13,11 @@ viral hook, or treat organic posts as a randomized experiment.
 
 Built for Toggle Wars, **Track 02: AI Agents and Feature Flags**.
 
-Public repository created:
+Public repository:
 [studio-experiment-pilot](https://github.com/sarthakguptatech7/studio-experiment-pilot).
-Source and demo publication are in progress and have not yet been verified.
-The prepared 2:42 walkthrough is staged as
-[demo/Studio_Experiment_Pilot_Demo.mp4](demo/Studio_Experiment_Pilot_Demo.mp4).
+The complete source is published and verified against the tested package.
+The **2:42 narrated demo is published**: [watch the walkthrough](demo/README.md)
+or open the [video attachment](https://github.com/user-attachments/assets/816d7d2c-d4f7-4e13-bd20-e16857656879).
 WeMakeDevs registration is complete; final project submission remains pending.
 
 Owner review: [private rehearsal preview](https://studio-experiment-pilot.sarthakgupta496399.chatgpt.site/).
