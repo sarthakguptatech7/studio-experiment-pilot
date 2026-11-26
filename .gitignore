@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+*.log
+*.tar.gz
+.DS_Store
+.sites-local/
+evidence/private/
