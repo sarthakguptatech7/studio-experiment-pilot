@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#122747">
+  <meta name="description" content="A focused experiment workbench for Studio OS. Review a content hypothesis, rehearse a Flagsmith workflow, inspect evidence, and approve development rollouts.">
+  <title>Studio OS · Experiment Pilot</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workbench">Skip to experiment</a>
+  <div id="app"></div>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <input type="file" id="agent-file" accept=".json,application/json" hidden>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
