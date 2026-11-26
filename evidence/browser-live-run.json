@@ -1,0 +1,242 @@
+{
+  "application": "Studio OS Experiment Pilot",
+  "exportedAt": "2026-11-26T07:49:10.215Z",
+  "mode": "live",
+  "plan": {
+    "id": "exp_a6e5aa5349e34294",
+    "title": "A specific promise for a creator lesson",
+    "brief": "Test one headline on an owned content lesson preview. Keep layout, content, CTA and distribution fixed. Measure one Continue action per identity. This demonstration uses synthetic traffic.",
+    "hypothesis": "Visitors assigned an outcome-specific headline will click Continue more often than those assigned a generic headline. Synthetic traffic verifies the measurement flow; a real audience test would be needed to validate this preference.",
+    "flagName": "studio_hook_a6e5aa53",
+    "metric": "continue_clicked",
+    "control": "Make better content with AI",
+    "treatment": "Turn one idea into a video outline",
+    "split": 50,
+    "minPerVariant": 50,
+    "minConversions": 5,
+    "probabilityThreshold": 0.95,
+    "provenance": "template",
+    "revision": 1,
+    "createdAt": "2026-11-26T07:46:47.054Z",
+    "scope": "development",
+    "hash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+    "status": "running"
+  },
+  "evidence": {
+    "source": "flagsmith",
+    "audience": "synthetic",
+    "scenario": "clear",
+    "generatedAt": "2026-11-26T07:47:48.292Z",
+    "planId": "exp_a6e5aa5349e34294",
+    "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+    "variants": [
+      {
+        "key": "control",
+        "label": "Make better content with AI",
+        "visitors": 399,
+        "conversions": 80,
+        "rate": 0.20050125313283207
+      },
+      {
+        "key": "treatment",
+        "label": "Turn one idea into a video outline",
+        "visitors": 401,
+        "conversions": 210,
+        "rate": 0.5236907730673317
+      }
+    ],
+    "probability": 0.9999999869829648,
+    "probabilityMethod": "Flagsmith Bayesian analysis of synthetic SDK events",
+    "sampleRatioP": 0.9436279433195861,
+    "warehouseSampleRatioP": null,
+    "totalVisitors": 800,
+    "events": 290,
+    "interval": {
+      "low": 1.044325557920196,
+      "high": 2.179489903426438
+    },
+    "experimentId": 2,
+    "asOf": "2026-11-26T07:47:48.120754Z",
+    "notes": [
+      "Actual assignment, event ingestion and analysis by Flagsmith. The audience and conversion choices are deliberately synthetic.",
+      "The conversion probabilities are inputs to the integration demonstration, not discoveries about customers.",
+      "This run validates the integration and decision boundary; it does not predict social reach.",
+      "The Flagsmith beta returned no allocation p-value. The separately labelled local chi-square check uses actual warehouse counts and the reviewed 50/50 split."
+    ],
+    "attestation": {
+      "action": "evidence",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "scope": "development",
+      "mode": "live",
+      "evidenceHash": "fe903924a81153c6c1894f237f276c1e28185125edad461fd4c5b29f9c77db60",
+      "receiptId": "8d67cbf5-46be-4cb2-abdb-7c00f7a52132",
+      "issuedAt": "2026-11-26T07:47:48.293Z",
+      "signature": "[redacted]"
+    }
+  },
+  "decision": {
+    "status": "rehearsal_winner",
+    "eligible": true,
+    "productionEligible": false,
+    "scope": "development",
+    "probability": 0.9999999869829648,
+    "winningVariant": "treatment",
+    "recommendation": "Rehearse treatment rollout",
+    "reasons": [
+      "Synthetic or unverified audience: no claim about real audience performance.",
+      "A development demonstration can show rollout and rollback. Production promotion remains locked."
+    ],
+    "checks": [
+      {
+        "label": "Enough visitors",
+        "passed": true,
+        "detail": "At least 50 unique visitors per variant."
+      },
+      {
+        "label": "Enough conversions",
+        "passed": true,
+        "detail": "At least 5 conversions per variant."
+      },
+      {
+        "label": "Balanced allocation",
+        "passed": true,
+        "detail": "Sample-ratio check p=0.944; stop below 0.001."
+      },
+      {
+        "label": "Evidence threshold",
+        "passed": true,
+        "detail": "Treatment needs at least 95% probability of beating control."
+      },
+      {
+        "label": "Platform uncertainty",
+        "passed": true,
+        "detail": "Flagsmith SRM is unavailable. A local chi-square check uses the actual warehouse counts against the approved 50/50 split; the platform lift interval must still be positive."
+      },
+      {
+        "label": "Audience provenance",
+        "passed": false,
+        "detail": "Synthetic or unverified audience: no claim about real audience performance."
+      }
+    ]
+  },
+  "launchReceipt": {
+    "action": "launch",
+    "planId": "exp_a6e5aa5349e34294",
+    "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+    "scope": "development",
+    "mode": "live",
+    "resources": {
+      "operations": [
+        "Created multivariate flag with control value.",
+        "Created keyed treatment variant with zero default allocation.",
+        "Created occurrence metric for the conversion event.",
+        "Created experiment with a 50/50 allocation.",
+        "Started the approved experiment."
+      ],
+      "featureId": 2,
+      "variantId": 2,
+      "metricId": 2,
+      "experimentId": 2,
+      "snapshot": {
+        "schemaVersion": 1,
+        "projectId": 1,
+        "environmentId": 1,
+        "useV2FeatureVersioning": false,
+        "featureId": 2,
+        "variantId": 2,
+        "featureState": {
+          "id": 3,
+          "enabled": true,
+          "value": "control",
+          "multivariate": [
+            {
+              "id": 3,
+              "multivariate_feature_option": 2,
+              "percentage_allocation": 0
+            }
+          ]
+        },
+        "experimentId": 2
+      },
+      "status": "running"
+    },
+    "receiptId": "18795988-a643-4945-8ff3-f7cec5586162",
+    "issuedAt": "2026-11-26T07:47:16.194Z",
+    "signature": "[redacted]"
+  },
+  "rolloutReceipt": null,
+  "audit": [
+    {
+      "id": "ccacc6a6-fa7d-4e8f-b933-4b297bcd0886",
+      "at": "2026-11-26T07:47:16.195Z",
+      "action": "launch_approved",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "reviewer via browser",
+      "mode": "live",
+      "detail": "Reviewed the exact flag, copy, metric and allocation."
+    },
+    {
+      "id": "3251863d-5585-4f5f-a55a-aa11c9a0b053",
+      "at": "2026-11-26T07:47:16.195Z",
+      "action": "experiment_started",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "experiment-pilot",
+      "mode": "live",
+      "detail": "Flagsmith created and started the experiment."
+    },
+    {
+      "id": "8acc315d-9a3c-406b-abae-c66bd4f4e476",
+      "at": "2026-11-26T07:47:48.294Z",
+      "action": "flagsmith_evidence_received",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "experiment-pilot",
+      "mode": "live",
+      "detail": "Read actual Flagsmith analysis from synthetic SDK traffic. This is not real audience evidence."
+    },
+    {
+      "id": "9622be29-f7f2-4458-ae78-22bedc827c5a",
+      "at": "2026-11-26T07:48:19.949Z",
+      "action": "rollout_approved",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "reviewer via browser",
+      "mode": "live",
+      "detail": "Reviewer approved a development-only rollout."
+    },
+    {
+      "id": "05cf0179-7ff9-4d40-b76b-dd1c0b769592",
+      "at": "2026-11-26T07:48:19.949Z",
+      "action": "development_rollout",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "experiment-pilot",
+      "mode": "live",
+      "detail": "Flagsmith completed experiment 2 and applied treatment."
+    },
+    {
+      "id": "bb380e41-4ddb-4bca-82d8-f53e6550b2f4",
+      "at": "2026-11-26T07:48:45.356Z",
+      "action": "rollback_approved",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "reviewer via browser",
+      "mode": "live",
+      "detail": "Reviewer approved restoring the prior value."
+    },
+    {
+      "id": "67f9e48c-284f-4a8d-b237-7c60e2715670",
+      "at": "2026-11-26T07:48:45.356Z",
+      "action": "rollback_completed",
+      "planId": "exp_a6e5aa5349e34294",
+      "planHash": "21466479392c2f9270ce45a9d76440bf6cb16b7d4c73adb3402da36e58fcd070",
+      "actor": "experiment-pilot",
+      "mode": "live",
+      "detail": "Flagsmith restored and verified the captured control state."
+    }
+  ],
+  "captureNote": "Actual browser workflow exercised by the authorized coding assistant as a demonstration operator; no claim that the owner personally performed the review clicks."
+}

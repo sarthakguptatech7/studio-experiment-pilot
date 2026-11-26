@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-26T07:37:43.286Z",
+  "integration": "real Flagsmith API and official Node.js SDK",
+  "trafficProvenance": "synthetic",
+  "synthetic": true,
+  "scope": "development",
+  "completed": true,
+  "approval": {
+    "experiment": "--approve-demo",
+    "rolloutAndImmediateRollback": "--approve-rollout"
+  },
+  "trace": [
+    {
+      "at": "2026-11-26T07:37:43.613Z",
+      "action": "Verified dedicated development environment and warehouse."
+    },
+    {
+      "at": "2026-11-26T07:37:43.616Z",
+      "action": "Created and validated the agent-authored development plan."
+    },
+    {
+      "at": "2026-11-26T07:37:45.380Z",
+      "action": "Created and started the approved Flagsmith experiment.",
+      "experimentId": 1
+    },
+    {
+      "at": "2026-11-26T07:37:55.157Z",
+      "action": "Flushed all synthetic exposure and conversion events through the SDK.",
+      "acceptedEvents": 1124
+    },
+    {
+      "at": "2026-11-26T07:37:55.308Z",
+      "action": "Requested one Flagsmith warehouse result refresh."
+    },
+    {
+      "at": "2026-11-26T07:37:57.604Z",
+      "action": "Read computed statistical results from Flagsmith."
+    },
+    {
+      "at": "2026-11-26T07:37:57.605Z",
+      "action": "Kept the running experiment; rollout was not both approved and supported by its actual data.",
+      "approved": true,
+      "eligible": false
+    },
+    {
+      "at": "2026-11-26T07:41:23.312Z",
+      "action": "Verified the existing plan hash and its current Flagsmith 50/50 rollout."
+    },
+    {
+      "at": "2026-11-26T07:41:23.474Z",
+      "action": "Read fresh Flagsmith results and assessed the allocation check.",
+      "allocationSource": "local-50-50",
+      "pValue": 0.0659920503287389
+    },
+    {
+      "at": "2026-11-26T07:41:24.082Z",
+      "action": "Applied the explicitly approved development treatment rollout."
+    },
+    {
+      "at": "2026-11-26T07:41:24.762Z",
+      "action": "Stopped continuation on an actual failure; existing resources were not recreated."
+    },
+    {
+      "at": "2026-11-26T07:43:58.548Z",
+      "action": "Retried only rollback after preserving the current multivariate child row IDs in the legacy update."
+    },
+    {
+      "at": "2026-11-26T07:43:59.568Z",
+      "action": "Restored and verified control through the Management API and six existing identities via the official SDK.",
+      "identitiesChecked": 6
+    }
+  ],
+  "connection": {
+    "connected": true,
+    "environmentId": 1,
+    "projectId": 1,
+    "warehouseConnected": true
+  },
+  "plan": {
+    "id": "exp_8564cce10c0e43e7",
+    "title": "Studio headline: outcome versus generic",
+    "brief": "Demonstrate a complete Flagsmith integration with explicitly synthetic visitors on an owned studio preview.",
+    "hypothesis": "The demo traffic generator assigns different conversion probabilities to test the complete measurement and approval workflow. This is an integration test, not evidence of real customer preference.",
+    "flagName": "studio_hook_8564cce1",
+    "metric": "continue_clicked",
+    "control": "A better way to make content.",
+    "treatment": "From one idea to a ready-to-review content draft.",
+    "split": 50,
+    "minPerVariant": 50,
+    "minConversions": 5,
+    "probabilityThreshold": 0.95,
+    "provenance": "agent",
+    "revision": 1,
+    "createdAt": "2026-11-26T07:37:43.614Z",
+    "scope": "development",
+    "hash": "6e3468409f6956a668002652d6a33c3fd4d240c189c8c20667844f989128314f"
+  },
+  "resources": {
+    "operations": [
+      "Created multivariate flag with control value.",
+      "Created keyed treatment variant with zero default allocation.",
+      "Created occurrence metric for the conversion event.",
+      "Created experiment with a 50/50 allocation.",
+      "Started the approved experiment."
+    ],
+    "featureId": 1,
+    "variantId": 1,
+    "metricId": 1,
+    "experimentId": 1,
+    "snapshot": {
+      "schemaVersion": 1,
+      "projectId": 1,
+      "environmentId": 1,
+      "useV2FeatureVersioning": false,
+      "featureId": 1,
+      "variantId": 1,
+      "featureState": {
+        "id": 1,
+        "enabled": true,
+        "value": "control",
+        "multivariate": [
+          {
+            "multivariate_feature_option": 1,
+            "percentage_allocation": 0
+          }
+        ]
+      },
+      "experimentId": 1
+    },
+    "status": "running"
+  },
+  "traffic": {
+    "assignments": {
+      "control": 374,
+      "treatment": 426
+    },
+    "conversions": {
+      "control": 74,
+      "treatment": 250
+    },
+    "synthetic": true,
+    "identityPrefix": "synthetic_studio_studio_hook_8564cce1_studio-live-v1",
+    "flushed": true,
+    "count": 800,
+    "scenario": "clear",
+    "seed": "studio-live-v1",
+    "acceptedEvents": 1124,
+    "acceptedBatches": 1,
+    "conversionProbabilities": {
+      "control": 0.2,
+      "treatment": 0.55
+    },
+    "note": "Synthetic visitors assigned by Flagsmith; these counts describe SDK calls and accepted events, not real audience behaviour. Reusing a seed reuses identities."
+  },
+  "flagsmithResults": {
+    "raw": {
+      "results": {
+        "as_of": "2026-11-26T07:37:55.316835Z",
+        "last_error_at": null,
+        "refresh_requested_at": "2026-11-26T07:37:55.304321Z",
+        "payload": {
+          "metrics": [
+            {
+              "variants": {
+                "control": {
+                  "n": 374,
+                  "sum": 74,
+                  "sum_squares": 74
+                },
+                "treatment": {
+                  "n": 426,
+                  "sum": 250,
+                  "sum_squares": 250
+                }
+              },
+              "inference": {
+                "treatment": {
+                  "lift": 1.9659941631772617,
+                  "ci_low": 1.3153979163570415,
+                  "ci_high": 2.6165904099974817,
+                  "chance_to_win": 0.9999999984163808
+                }
+              },
+              "metric_id": 1,
+              "conversions_timeseries": {
+                "points": [
+                  {
+                    "bucket": "2026-11-26T07:00:00+00:00",
+                    "converted_identities": {
+                      "control": 74,
+                      "treatment": 250
+                    }
+                  }
+                ],
+                "granularity": "hour"
+              }
+            }
+          ],
+          "srm_p_value": null,
+          "exposures_timeseries": {
+            "points": [
+              {
+                "bucket": "2026-11-26T07:00:00+00:00",
+                "new_identities": {
+                  "control": 374,
+                  "treatment": 426
+                }
+              }
+            ],
+            "granularity": "hour"
+          }
+        },
+        "is_final": false
+      }
+    },
+    "normalized": {
+      "asOf": "2026-11-26T07:37:55.316835Z",
+      "isFinal": false,
+      "lastErrorAt": null,
+      "srmPValue": null,
+      "metrics": [
+        {
+          "metricId": 1,
+          "variants": {
+            "control": {
+              "exposed": 374,
+              "conversions": 74,
+              "rate": 0.19786096256684493
+            },
+            "treatment": {
+              "exposed": 426,
+              "conversions": 250,
+              "rate": 0.5868544600938967
+            }
+          },
+          "inference": {
+            "treatment": {
+              "lift": 1.9659941631772617,
+              "ci_low": 1.3153979163570415,
+              "ci_high": 2.6165904099974817,
+              "chance_to_win": 0.9999999984163808
+            }
+          }
+        }
+      ]
+    }
+  },
+  "decision": {
+    "status": "rehearsal_winner",
+    "eligible": true,
+    "productionEligible": false,
+    "scope": "development",
+    "probability": 0.9999999984163808,
+    "winningVariant": "treatment",
+    "recommendation": "Rehearse treatment rollout",
+    "reasons": [
+      "Synthetic or unverified audience: no claim about real audience performance.",
+      "A development demonstration can show rollout and rollback. Production promotion remains locked."
+    ],
+    "checks": [
+      {
+        "label": "Enough visitors",
+        "passed": true,
+        "detail": "At least 50 unique visitors per variant."
+      },
+      {
+        "label": "Enough conversions",
+        "passed": true,
+        "detail": "At least 5 conversions per variant."
+      },
+      {
+        "label": "Balanced allocation",
+        "passed": true,
+        "detail": "Sample-ratio check p=0.0660; stop below 0.001."
+      },
+      {
+        "label": "Evidence threshold",
+        "passed": true,
+        "detail": "Treatment needs at least 95% probability of beating control."
+      },
+      {
+        "label": "Platform uncertainty",
+        "passed": true,
+        "detail": "Flagsmith SRM is unavailable. A local chi-square check uses the actual warehouse counts against the approved 50/50 split; the platform lift interval must still be positive."
+      },
+      {
+        "label": "Audience provenance",
+        "passed": false,
+        "detail": "Synthetic or unverified audience: no claim about real audience performance."
+      }
+    ],
+    "credibleIntervalSupportsTreatment": true,
+    "warehouseSplitValid": true
+  },
+  "allocationCheck": {
+    "source": "local-50-50",
+    "pValue": 0.0659920503287389,
+    "passed": true,
+    "reason": "Flagsmith returned null SRM. This local chi-squared allocation check uses real warehouse exposure counts and the verified approved 50/50 rollout. It is not a Flagsmith-reported p-value."
+  },
+  "rollout": {
+    "status": "completed",
+    "winner": "treatment",
+    "experimentId": 1,
+    "snapshot": {
+      "schemaVersion": 1,
+      "projectId": 1,
+      "environmentId": 1,
+      "useV2FeatureVersioning": false,
+      "featureId": 1,
+      "variantId": 1,
+      "featureState": {
+        "id": 1,
+        "enabled": true,
+        "value": "control",
+        "multivariate": [
+          {
+            "multivariate_feature_option": 1,
+            "percentage_allocation": 0
+          }
+        ]
+      },
+      "experimentId": 1
+    },
+    "operations": [
+      "Completed experiment and applied the approved rollout decision."
+    ]
+  },
+  "failureHistory": [
+    {
+      "message": "Flagsmith request failed (HTTP 400). No automatic retry was attempted.",
+      "code": "UPSTREAM_ERROR",
+      "status": 400,
+      "observedCause": "Legacy nested feature-state update omitted existing multivariate row ID, causing a duplicate unique pair.",
+      "recoveryStartedAt": "2026-11-26T07:43:58.548Z"
+    }
+  ],
+  "rollback": {
+    "restored": true,
+    "status": "rolled_back",
+    "featureId": 1,
+    "experimentId": 1,
+    "operations": [
+      "Restored and verified the captured control configuration."
+    ],
+    "sdkVerification": {
+      "identitiesChecked": 6,
+      "value": "control",
+      "enabled": true,
+      "eventsRecorded": 0
+    }
+  },
+  "finishedAt": "2026-11-26T07:43:59.568Z"
+}
